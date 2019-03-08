@@ -27,9 +27,10 @@ function appendKitten(name) {
 }
 
 function removeLastKitten() {
-  var newKittens = kittens.pop()
-  return kittens;
+  var newKittens = kittens.slice(0, kittens.length - 1);
+  return newKittens;
 }
 
+kittens;
 
 
